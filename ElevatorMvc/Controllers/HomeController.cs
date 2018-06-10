@@ -15,7 +15,7 @@ namespace ElevatorMvc.Controllers
         {
             var el = new Elevator();
 
-            el.Name = "2nd elevator.";
+            el.Name = "2nd elevator is working.";
             return View(el);
         }
 
