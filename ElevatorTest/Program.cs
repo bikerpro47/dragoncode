@@ -7,13 +7,21 @@ namespace ElevatorTest
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var el1 = new Elevator
+            {
+                Name = "Elevator No 1",
+                FloorNo = 1
+            };
 
-            var el = new Elevator();
+            var fb1 = new FloorButton { FloorNo = 1 };
+            var fb2 = new FloorButton { FloorNo = 2 };
 
-            el.Name = "1st elevator";
+            // People press some buttons
+            fb1.Direction = ElevatorDir.UP;
+            fb2.Direction = ElevatorDir.DOWN;
 
-            Console.WriteLine($"{el.Name} is ready.");
+
+            Console.WriteLine($"{el1.Name} is on Floor Number {el1.FloorNo}");
 
             Console.ReadLine();
         }

@@ -13,9 +13,10 @@ namespace ElevatorMvc.Controllers
     {
         public IActionResult Index()
         {
-            var el = new Elevator();
-
-            el.Name = "2nd elevator is working.";
+            var el = new Elevator
+            {
+                Name = "2nd elevator is working."
+            };
             return View(el);
         }
 
